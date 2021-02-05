@@ -1,0 +1,22 @@
+{
+  "name": "advanced-study",
+  "version": "1.0.0",
+  "description": "![Alt text](node-thread-pool.png?raw=true \"Title\") ![Alt text](thread-pool-os.png?raw=true \"Title\") ![Alt text](node-fs.png?raw=true \"Title\") ![Alt text](improve-node-performance.png?raw=true \"Title\")",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viettran1010/node-advanced-study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viettran1010/node-advanced-study/issues"
+  },
+  "homepage": "https://github.com/viettran1010/node-advanced-study#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
