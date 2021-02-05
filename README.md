@@ -6,3 +6,5 @@
 
 Use apache benchmark to benchmark a large number of requests:
 - ab -c 50 -n 500 localhost:3000/fast : 500 requests to address, max 50 at a time
+
+![Alt text](worker-threads.png?raw=true "Title")
