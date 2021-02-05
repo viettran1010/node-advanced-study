@@ -5,3 +5,5 @@
 ![Alt text](improve-node-performance.png?raw=true "Title")
 ![Alt text](cluster-manager.png?raw=true "Title")
 ![Alt text](cluster-fork.png?raw=true "Title")
+![Alt text](clustering-6-children.png?raw=true "Title")
+![Alt text](clustering-2-children.png?raw=true "Title")
