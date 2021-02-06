@@ -7,6 +7,9 @@ By deafault, thread pool has 4 threads limit. When we call crypto functions 5 ti
 All the network tasks will be delegated to OS, whereas all the call to fs library will be handled by thread pool.
 
 ![Alt text](thread-pool-os.png?raw=true "Title")
+
+When read/write/update/etc file, the working thread will have to interact with HDD, which might take sometime for the HDD to response. So the logical thread handling this task might 'pause' and switch to do other tasks.
+
 ![Alt text](node-fs.png?raw=true "Title")
 ![Alt text](improve-node-performance.png?raw=true "Title")
 
