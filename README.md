@@ -11,6 +11,9 @@ All the network tasks will be delegated to OS, whereas all the call to fs librar
 When read/write/update/etc file, the working thread will have to interact with HDD, which might take sometime for the HDD to response. So the logical thread handling this task might 'pause' and switch to do other tasks.
 
 ![Alt text](node-fs.png?raw=true "Title")
+
+Using cluster should be handled with care, usually the number of clusters should not be greater than the number of logical threads. This can be automatically handled by pm2 library.
+
 ![Alt text](improve-node-performance.png?raw=true "Title")
 
 Use apache benchmark to benchmark a large number of requests:
