@@ -1,11 +1,10 @@
-// node myFile.js
+// This file contains the pseudo logic to illustrate how event loop is executed
+// We start with this commend: node myFile.js
 
+// There array/queue here to store different types of work to be done:
 const pendingTimers = [];
 const pendingOSTasks = [];
 const pendingOperations = [];
-
-// New timers, tasks, operations are recorded from myFile running
-myFile.runContents();
 
 function shouldContinue() {
   // Check one: any pending setTimeout, setInterval, setImmediate?
@@ -21,7 +20,7 @@ while ( shouldContinue()) {
   
   // 2) Node looks at pendingOSTasks and pendingOperations and call relevent callbacks
   
-  // 3) Pause execution. Continue when...
+  // 3) Pause execution insted of running the next loop ASAP. Continue when:
   //  - a new pendingOSTask is done
   //  - a new pendingOperation is done
   //  - a timer is about to complete
